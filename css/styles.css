@@ -326,6 +326,11 @@ border-radius: 50%;
   font-size: 1.5rem;
 }
 
+.hover-text:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .map {
   display: inline-block;
   margin-left: 100px;
