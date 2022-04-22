@@ -1,0 +1,371 @@
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background-color: #40DFEF;
+}
+
+h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 1.25rem;
+}
+
+h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+h4 {
+  color: #40DFEF;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Ramabhadra', sans-serif;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* containters */
+.container-fluid {
+  padding: 3% 7%;
+}
+
+/* Secion dividers (notch) */
+
+.notch {
+  height: 50px;
+  position: relative;
+}
+
+.sec1 {
+  height: 50px;
+  background: #1572A1;
+  position: relative;
+}
+
+.sec2 {
+  height: 50px;
+  background: #40DFEF;
+  position: relative;
+}
+
+.circle-dark {
+  width: 60px;
+  height: 60px;
+  background: #1572A1;
+  border-radius: 50%;
+  bottom: -30px;;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  z-index: 2;
+}
+
+.circle-light {
+  width: 60px;
+  height: 60px;
+  background: #40DFEF;
+  border-radius: 50%;
+  bottom: -30px;;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  z-index: 2;
+}
+
+
+/* navbar */
+.navbar {
+  padding: 0.5rem 0 0;
+  display: flex;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1)
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1);
+}
+
+.mail-image {
+  text-align: right;
+  width: 30%;
+}
+
+.navbar-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* top section / title */
+
+.top-section {
+  background-image: url("../assets/dreamstime.jpg");
+  background-size: 2000px;
+  /* background-position: -200px -150px; */
+  height: 630px;
+}
+
+.surf-logo-top {
+  height: 100px;
+  margin-right: 30px;
+}
+
+.surf-logo-btm {
+  height: 80px;
+  margin-left: 30px;
+}
+
+/* Why */
+
+.why {
+  background-color: #40DFEF;
+}
+
+.why-icon {
+  opacity: 0.5;
+  height: 100px;
+  padding: 15px 10px;
+}
+
+.why-icon:hover {
+  opacity: 1;
+}
+
+.why-icon:hover~.why-text {
+  opacity: 1;
+}
+
+.why-text {
+  opacity: 0.75;
+
+}
+
+.why-title {
+  color: #1572A1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+
+}
+
+/* BIO */
+
+.bio {
+  background-color: #1572A1;
+  float: left;
+  width: 50%;
+}
+
+.bio-pic{
+  width: 25%;
+  border: solid 2px white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.bio-text {
+  color: white;
+  padding: 0 25px;
+  text-align: justify;
+}
+
+/* Gallery */
+
+#About {
+  background-color: #1572A1;
+}
+
+.about {
+  background-color: #1572A1;
+  display: inline-block;
+}
+
+
+.carousel {
+  background-color: #1572A1;
+  float: left;
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.gallery-img {
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+
+
+/* testimonial */
+
+.dark-title {
+  color: #1572A1;
+}
+
+.test-card {
+margin: 20px 100px 0 100px;
+border: 2px solid white;
+border-radius: 50%;
+
+}
+
+.card{
+  border:none;
+  float: left;
+  width: 33%;
+  background-color: #40DFEF;
+}
+
+.testimonial {
+  display: inline-block;
+  background-color: #40DFEF;
+}
+
+.test-title {
+  color: black;
+}
+
+
+
+
+/* book repairs */
+.book-repairs {
+  background-color: #1572A1;
+}
+
+/* .book-title { */
+  /* color: #1572A1; */
+  /* padding-bottom: 0;
+} */
+
+.book-subtitle {
+  color: white;
+  text-align: justify;
+}
+
+.contact-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.repair-title {
+  margin-bottom: 75px;
+}
+
+.contact-info {
+  display: inline-block;
+  text-align: left;
+  height: 400px;
+  vertical-align: top;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+.contact-icons {
+  display: inline-block;
+  height: 400px;
+  vertical-align: top;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact-icons i {
+  text-align: center;
+  margin: 60px 15px 0;
+}
+
+.contact-info p {
+  margin: 61px 0;
+  font-size: 1.5rem;
+}
+
+.map {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+/* Footer */
+.footer {
+  background-color: #40DFEF;
+  padding: 10px;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 2rem;
+  margin: 25px;
+}
+
+/* WIDE MONITORS */
+@media (min-width:1400px) {
+
+  .mail-image {
+    text-align: right;
+    width: 50%;
+  }
+
+
+
+}
+
+
+/* IPHONE / TABLET */
+@media (max-width:991px) {
+
+.mail-image {
+  text-align: center;
+  width: inherit;
+}
+
+.top-section {
+  height: 700px;
+}
+
+}
