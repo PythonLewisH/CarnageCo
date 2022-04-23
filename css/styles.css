@@ -95,7 +95,6 @@ a {
   z-index: 2;
 }
 
-
 /* NAVBAR  */
 
 .navbar {
@@ -138,7 +137,6 @@ a {
     /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
 /* }
 
-
 /* TOP SECTION */
 
 .top-section {
@@ -156,7 +154,6 @@ a {
   height: 80px;
   margin-left: 30px;
 }
-
 
 /* WHY US SECTION */
 
@@ -191,12 +188,15 @@ a {
 
 }
 
-
-
 /*  ABOUT SECTION */
 
 #About {
   background-color: #1572A1;
+}
+
+.about {
+  background-color: #1572A1;
+  display: inline-block;
 }
 
 /* Bio */
@@ -222,12 +222,6 @@ a {
 
 /* Gallery */
 
-.about {
-  background-color: #1572A1;
-  display: inline-block;
-}
-
-
 .carousel {
   background-color: #1572A1;
   float: left;
@@ -241,39 +235,18 @@ a {
   margin-bottom: 50px;
 }
 
-
-
 /* TESTIMONIALS */
+
+.testimonial-photo {
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
 
 .dark-title {
   color: #1572A1;
 }
-
-.testimonial {
-  display: inline-block;
-  background-color: #40DFEF;
-}
-
-.card{
-  border:none;
-  float: left;
-  width: 33%;
-  background-color: #40DFEF;
-}
-
-.test-card {
-margin: 20px 100px 0 100px;
-border: 2px solid white;
-border-radius: 50%;
-
-}
-
-
-.test-title {
-  color: black;
-}
-
-
 
 /* CONTACT SECTION */
 
@@ -285,7 +258,6 @@ border-radius: 50%;
   margin-bottom: 75px;
 }
 
-
 .contact-subtitle {
   color: white;
   text-align: justify;
@@ -295,6 +267,7 @@ border-radius: 50%;
   display: inline-block;
   vertical-align: top;
   width: 400px;
+  margin-right: 25px;
 }
 
 .contact-info {
@@ -334,11 +307,7 @@ border-radius: 50%;
 
 .map {
   display: inline-block;
-}
-
-.divider {
-  display: inline-block;
-  width: 100px;
+  margin-left: 25px;
 }
 
 /* Footer */
@@ -386,5 +355,46 @@ border-radius: 50%;
 .top-section {
   height: 700px;
 }
+
+/* ABOUT SECTION */
+
+.bio {
+  background-color: #1572A1;
+  float: none;
+  width: auto;
+  margin: 0 100px 50px;
+
+}
+
+.carousel {
+  background-color: #1572A1;
+  float: none;
+  width: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* TESTIMONIALS SECTION */
+
+
+/* CONTACT SECTION */
+.contact-content {
+  margin:0 50px 0 100px;
+  text-align: center;
+  width: auto;
+}
+
+.map {
+  margin-right: 0;
+}
+
+/* V SMALL WINDOW */
+@media (max-width:750px) {
+
+.contact-icons {
+  display:none;
+}
+
+/* TESTIMONIALS SECTION */
 
 }
