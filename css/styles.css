@@ -281,20 +281,6 @@ a {
 }
 
 
-.contact-icons {
-  display: inline-block;
-  height: 400px;
-  vertical-align: top;
-  color: white;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.contact-icons i {
-  text-align: center;
-  margin: 60px 15px 0;
-}
-
 .contact-info p {
   margin: 61px 0;
   font-size: 1.5rem;
@@ -388,13 +374,9 @@ a {
   margin-right: 0;
 }
 
+}
 /* V SMALL WINDOW */
 @media (max-width:750px) {
 
-.contact-icons {
-  display:none;
-}
-
-/* TESTIMONIALS SECTION */
 
 }
