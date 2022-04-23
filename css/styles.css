@@ -43,6 +43,7 @@ a {
   padding: 3% 7%;
 }
 
+
 /* Secion dividers (notch) */
 
 .notch {
@@ -67,7 +68,7 @@ a {
   height: 60px;
   background: #1572A1;
   border-radius: 50%;
-  bottom: -30px;;
+  bottom: -30px;
   position: absolute;
   margin: 0 auto;
   left: 0;
@@ -95,7 +96,8 @@ a {
 }
 
 
-/* navbar */
+/* NAVBAR  */
+
 .navbar {
   padding: 0.5rem 0 0;
   display: flex;
@@ -132,18 +134,16 @@ a {
     color: rgba(255, 255, 255, 1);
 }
 
+/* .navbar-dark .navbar-toggler-icon {
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+/* }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 
-
-/* top section / title */
+/* TOP SECTION */
 
 .top-section {
   background-image: url("../assets/dreamstime.jpg");
   background-size: 2000px;
-  /* background-position: -200px -150px; */
   height: 630px;
 }
 
@@ -157,7 +157,8 @@ a {
   margin-left: 30px;
 }
 
-/* Why */
+
+/* WHY US SECTION */
 
 .why {
   background-color: #40DFEF;
@@ -166,7 +167,7 @@ a {
 .why-icon {
   opacity: 0.5;
   height: 100px;
-  padding: 15px 10px;
+  padding: 15px 10px 15px;
 }
 
 .why-icon:hover {
@@ -190,7 +191,15 @@ a {
 
 }
 
-/* BIO */
+
+
+/*  ABOUT SECTION */
+
+#About {
+  background-color: #1572A1;
+}
+
+/* Bio */
 
 .bio {
   background-color: #1572A1;
@@ -213,10 +222,6 @@ a {
 
 /* Gallery */
 
-#About {
-  background-color: #1572A1;
-}
-
 .about {
   background-color: #1572A1;
   display: inline-block;
@@ -238,17 +243,15 @@ a {
 
 
 
-/* testimonial */
+/* TESTIMONIALS */
 
 .dark-title {
   color: #1572A1;
 }
 
-.test-card {
-margin: 20px 100px 0 100px;
-border: 2px solid white;
-border-radius: 50%;
-
+.testimonial {
+  display: inline-block;
+  background-color: #40DFEF;
 }
 
 .card{
@@ -258,10 +261,13 @@ border-radius: 50%;
   background-color: #40DFEF;
 }
 
-.testimonial {
-  display: inline-block;
-  background-color: #40DFEF;
+.test-card {
+margin: 20px 100px 0 100px;
+border: 2px solid white;
+border-radius: 50%;
+
 }
+
 
 .test-title {
   color: black;
@@ -269,18 +275,18 @@ border-radius: 50%;
 
 
 
+/* CONTACT SECTION */
 
-/* book repairs */
-.book-repairs {
+.contact-section {
   background-color: #1572A1;
 }
 
-/* .book-title { */
-  /* color: #1572A1; */
-  /* padding-bottom: 0;
-} */
+.contact-title {
+  margin-bottom: 75px;
+}
 
-.book-subtitle {
+
+.contact-subtitle {
   color: white;
   text-align: justify;
 }
@@ -289,11 +295,6 @@ border-radius: 50%;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  margin-left: 100px;
-}
-
-.repair-title {
-  margin-bottom: 75px;
 }
 
 .contact-info {
@@ -333,7 +334,11 @@ border-radius: 50%;
 
 .map {
   display: inline-block;
-  margin-left: 100px;
+}
+
+.divider {
+  display: inline-block;
+  width: 100px;
 }
 
 /* Footer */
@@ -348,20 +353,29 @@ border-radius: 50%;
   margin: 25px;
 }
 
+
+
+
+
+
+
 /* WIDE MONITORS */
 @media (min-width:1400px) {
+
+/* Navbar  */
 
   .mail-image {
     text-align: right;
     width: 50%;
   }
 
-
-
 }
 
 
-/* IPHONE / TABLET */
+
+
+
+/*  TABLET */
 @media (max-width:991px) {
 
 .mail-image {
