@@ -243,6 +243,15 @@ a {
   margin-bottom: 50px;
 }
 
+.map {
+width: 400px;
+height: 400px;
+position: relative;
+overflow: hidden;
+margin-left: 25px;
+}
+
+
 /* TESTIMONIALS */
 
 .testimonial-photo {
@@ -341,10 +350,6 @@ a {
 
 /* Navbar  */
 
-.test {
-  background-color: orange;
-}
-
   .mail-image {
     text-align: right;
     width: 50%;
@@ -357,10 +362,6 @@ a {
 
 /*  TABLET */
 @media (max-width: 991px) {
-
-  .test {
-    background-color: pink;
-  }
 
 .mail-image {
   text-align: center;
@@ -390,6 +391,14 @@ a {
   padding-right: 100px;
 }
 
+.map {
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+margin-left: 0;
+}
+
 /* TESTIMONIALS SECTION */
 
 
@@ -409,17 +418,58 @@ a {
 /* MOBILE */
 @media (max-width: 576px) {
 
-.test {
-  background-color: red;
-}
-
 .mobile-banner {
   background-color: #1572A1;
 }
 
+.surf-logo-top {
+  height: 50px;
+}
+
+.mobile-test {
+  font-size: 2.5rem;
+}
+
+.surf-logo-bottom {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.title {
+  margin-top: 100px;
+}
+
+.bio {
+  margin: 0;
+
+}
 
 
+.gallery-img {
+  height: 150px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 
+.contact-info {
+  height: auto;
+}
 
+.contact-info p {
+  font-size: 1rem;
+  height: auto;
+}
+
+.contact-content {
+  margin: 0;
+}
+
+.map {
+width: 300px;
+height: 300px;
+position: relative;
+overflow: hidden;
+margin-left: 0;
+}
 
 }
