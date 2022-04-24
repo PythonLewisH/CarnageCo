@@ -322,10 +322,28 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* WIDE MONITORS */
 @media (min-width:1400px) {
 
 /* Navbar  */
+
+.test {
+  background-color: orange;
+}
 
   .mail-image {
     text-align: right;
@@ -338,7 +356,11 @@ a {
 
 
 /*  TABLET */
-@media (min-width: 481px) {
+@media (max-width: 991px) {
+
+  .test {
+    background-color: pink;
+  }
 
 .mail-image {
   text-align: center;
@@ -348,7 +370,6 @@ a {
 .top-section {
   height: 700px;
 }
-
 
 
 /* ABOUT SECTION */
@@ -384,17 +405,21 @@ a {
 }
 
 }
-/* Mobile */
-@media (max-width:480px) {
 
-} {
+/* MOBILE */
+@media (max-width: 576px) {
 
-.mobile {
+.test {
+  background-color: red;
+}
+
+.mobile-banner {
   background-color: #1572A1;
 }
 
-h1 {
-  font-size: 200px;
-}
+
+
+
+
 
 }
