@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  background-color: #40DFEF;
+  background-color: white;
 }
 
 h1 {
@@ -25,11 +25,12 @@ h3 {
 }
 
 h4 {
-  color: #40DFEF;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Ramabhadra', sans-serif;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 a {
@@ -40,57 +41,6 @@ a {
 /* containters */
 .container-fluid {
   padding: 3% 7%;
-}
-
-/* Secion dividers (notch) */
-.notch {
-  height: 50px;
-  position: relative;
-}
-
-.sec1 {
-  height: 50px;
-  background: #1572A1;
-  position: relative;
-}
-
-.sec2 {
-  height: 50px;
-  background: #40DFEF;
-  position: relative;
-}
-
-.circle-dark {
-  width: 60px;
-  height: 60px;
-  background: #1572A1;
-  border-radius: 50%;
-  bottom: -30px;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
-  z-index: 2;
-}
-
-.circle-light {
-  width: 60px;
-  height: 60px;
-  background: #40DFEF;
-  border-radius: 50%;
-  bottom: -30px;
-  ;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
-  z-index: 2;
 }
 
 /* NAVBAR  */
@@ -120,9 +70,20 @@ a {
   width: 30%;
 }
 
+.gallery-mail-image {
+  text-align: right;
+  width: 45%;
+}
+
+.navbar-icon-1 {
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 25px;
+}
+
 .navbar-icon {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -133,9 +94,13 @@ a {
   border-color: rgb(255, 255, 255);
 }
 
+.mobile-banner {
+  padding-top: 10px;
+}
+
 /* TOP SECTION */
 .top-section {
-  background-image: url("../assets/dreamstime.jpg");
+  background-image: url("../assets/lb2.jpeg");
   background-size: 2000px;
   height: 630px;
 }
@@ -150,103 +115,166 @@ a {
   margin-left: 30px;
 }
 
-/* WHY US SECTION */
-.why {
-  background-color: #40DFEF;
+.cta {
+  background-color: white;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #3f5459;
+  padding: .5rem 1rem;
+  display: inline-block;
+  font-size: 1.2rem;
 }
 
-.why-icon {
-  opacity: 0.5;
+/* SERVICES SECTION */
+.services {
+  background-color: white;
+  /* background-image: url("../assets/smooth.jpg"); */
+  /* border-top: solid 5px black; */
+}
+
+.services-icon {
+  /* opacity: 0.5; */
   height: 100px;
   padding: 15px 10px 15px;
 }
 
-.why-icon:hover {
-  opacity: 1;
+.fin {
+margin-left: 15px;
+}
+.light-icon {
+  opacity: 0.8;
 }
 
-.why-icon:hover~.why-text {
-  opacity: 1;
-}
-
-.why-text {
-  opacity: 0.75;
-}
-
-.why-title {
-  color: #1572A1;
-  font-size: 1.5rem;
-  font-weight: bold;
+.services-title {
+  color: #3f5459;
   padding-bottom: 10px;
 }
 
-/*  ABOUT SECTION */
-#About {
-  background-color: #1572A1;
-}
-
+/* ABOUT */
 .about {
-  background-color: #1572A1;
-  display: inline-block;
+  background-color: #3f5459;
 }
 
-/* Bio */
-.bio {
-  background-color: #1572A1;
-  float: left;
-  width: 50%;
+.about-card {
+  max-width: 540px;
+  margin: 40px auto;
 }
 
-.bio-pic {
-  width: 25%;
-  border: solid 2px white;
-  border-radius: 50%;
-  margin-bottom: 20px;
+.about-img {
+  padding: 10px;
 }
 
-.bio-text {
+.card-title {
+  color: #3f5459;
+}
+
+.card-text {
+  color: #3f5459;
+}
+
+.gallery {
+  /* line-height: 0; */
+  column-count: 4;
+  column-gap: 0;
+}
+
+.image-container {
+  position: relative;
+}
+.caption {
   color: white;
-  padding: 0 25px;
-  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  background: rgba(0,0,0,0.6);
+  border: 3px solid white;
+  border-top: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+  width: 100%;
+  line-height: 1.2;
+  padding-bottom: 2px;
 }
 
-/* Gallery */
-.carousel {
-  background-color: #1572A1;
-  float: left;
-  width: 50%;
-  padding-left: 100px;
-  padding-right: 100px;
+.lightbox-caption {
+z-index: 1001;
+color: white;
+position: absolute;
+bottom: 10px;
+background: rgba(0,0,0,0.6);
+transition: opacity 0.25s;
+line-height: 1.2;
+padding-bottom: 2px;
 }
+
+
+.image-container:hover .caption {
+opacity: 1;
+}
+
 
 .gallery-img {
-  height: 300px;
-  margin-bottom: 50px;
+  width: 100% !important;
+  height: auto !important;
+  cursor: pointer;
+  border: 3px solid white;
 }
 
-.map {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  margin-left: 25px;
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox .main-image {
+  position: absolute;
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: white;
+  border: 2px solid white;
+}
+
+#lightbox .close-image {
+  position: absolute;
+  right:2%;
+  top: 2%;
+  max-width: 50px;
+  margin: 10px;
+
+}
+
+.close {
+  display:none;
+  height: 40px;
 }
 
 /* TESTIMONIALS */
 .testimonial-photo {
   height: 100px;
-  border: 2px solid white;
+  border: 2px solid #3f5459;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
 .dark-title {
-  color: #1572A1;
+  color: #3f5459;
 }
 
 /* CONTACT SECTION */
 .contact-section {
-  background-color: #1572A1;
+  background-color: #3f5459;
 }
 
 .contact-title {
@@ -258,26 +286,26 @@ a {
   text-align: justify;
 }
 
+
+
 .contact-content {
   display: inline-block;
   vertical-align: top;
   width: 400px;
   margin-right: 25px;
+  margin-bottom:25px;
 }
 
 .contact-info {
-  display: inline-block;
   text-align: left;
-  height: 400px;
   vertical-align: top;
   color: white;
-  font-size: 1.5rem;
   font-weight: 400;
 }
 
 .contact-info p {
-  margin: 61px 0;
-  font-size: 1.5rem;
+  /* margin: 61px 0;
+  font-size: 1.5rem; */
 }
 
 .hover-text:hover {
@@ -286,18 +314,19 @@ a {
 }
 
 .map {
-  display: inline-block;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
   margin-left: 25px;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* Footer */
-.footer {
-  background-color: #40DFEF;
-  padding: 10px;
-}
-
 .footer-icon {
-  color: white;
+  color: #3f5459;
   font-size: 2rem;
   margin: 25px;
 }
@@ -310,6 +339,15 @@ a {
     text-align: right;
     width: 50%;
   }
+
+  .gallery-mail-image {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.gallery {
+  column-count: 4;
 }
 
 /*  TABLET */
@@ -317,26 +355,30 @@ a {
   .mail-image {
     text-align: center;
     width: inherit;
+    margin-top: 10px;
+  }
+
+  .gallery-mail-image {
+    text-align: center;
+    width: inherit;
+    margin-top: 10px;
   }
 
   .top-section {
     height: 700px;
   }
 
-  /* ABOUT SECTION */
-  .bio {
-    background-color: #1572A1;
-    float: none;
-    width: auto;
-    margin: 0 100px 50px;
+  .gallery {
+    column-count: 3;
   }
 
-  .carousel {
-    background-color: #1572A1;
-    float: none;
-    width: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+  /* ABOUT SECTION */
+  .bio {
+    display: block;
+  }
+
+  .bio-pic {
+    width: 25%;
   }
 
   .map {
@@ -348,9 +390,20 @@ a {
   }
 
   /* TESTIMONIALS SECTION */
+  .testimonial-photo {
+    height: 100px;
+    border: 2px solid #3f5459;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .dark-title {
+    color: #3f5459;
+  }
+
   /* CONTACT SECTION */
   .contact-content {
-    margin: 0 50px 0 100px;
+    margin: 0 50px 0 50px;
     text-align: center;
     width: auto;
   }
@@ -358,12 +411,33 @@ a {
   .map {
     margin-right: 0;
   }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+  }
 }
+
+
+
+@media (max-width: 767px) {
+
+  .about-card {
+    max-width: 540px;
+    margin: 40px 20%;
+  }
+
+}
+
+
 
 /* MOBILE */
 @media (max-width: 576px) {
   .mobile-banner {
-    background-color: #1572A1;
+    background-color: #3f5459;
   }
 
   .mobile-test {
@@ -374,23 +448,38 @@ a {
     margin-top: 100px;
   }
 
-  .bio {
-    margin: 0;
+  .gallery {
+    column-count: 2;
   }
 
-  .gallery-img {
-    height: 150px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+
+  .mail-image {
+    margin-top: 10px;
+  }
+
+  .gallery-mail-image {
+    text-align: center;
+    width:auto;
+    margin-top: 10px;
+  }
+
+  .about-card {
+    max-width: 540px;
+    margin: 40px 20%;
   }
 
   .contact-info {
     height: auto;
+    text-align: center;
   }
 
   .contact-info p {
     font-size: 1rem;
     height: auto;
+  }
+
+  .contact-subtitle {
+    text-align: center;
   }
 
   .contact-content {
