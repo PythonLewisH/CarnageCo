@@ -113,6 +113,8 @@ a {
 }
 
 
+
+
 /* SERVICES SECTION */
 
 .services-icon {
@@ -180,13 +182,14 @@ margin-left: 15px;
   margin-bottom: 50px;
 }
 
-.contact-subtitle {
+.service-list {
   text-align: justify;
 }
 
 
 
 .contact-content {
+  text-align: left;
   display: inline-block;
   vertical-align: top;
   width: 400px;
@@ -206,13 +209,19 @@ margin-left: 15px;
 }
 
 .map {
-  width: 350px;
-  height: 350px;
+  width: 360px;
+  height: 390px;
   position: relative;
-  margin-left: 25px;
+  margin: 0 0 25px 25px;
   display: inline-block;
-  margin-bottom: 25px;
-  margin-top: 25px;
+}
+
+.gallery-link {
+  text-decoration: underline;
+}
+
+.gallery-link:hover {
+  color: inherit;
 }
 
 /* Footer */
@@ -251,7 +260,7 @@ margin-left: 15px;
   padding-bottom: 2px;
 }
 
-.lightbox-caption {
+/* .lightbox-caption {
 z-index: 1001;
 color: white;
 position: absolute;
@@ -260,7 +269,7 @@ background: rgba(0,0,0,0.6);
 transition: opacity 0.25s;
 line-height: 1.2;
 padding-bottom: 2px;
-}
+} */
 
 
 .image-container:hover .caption {
@@ -385,6 +394,7 @@ opacity: 1;
   }
 
   .map {
+    margin-top: 25px;
     margin-right: 0;
   }
 
@@ -395,6 +405,17 @@ opacity: 1;
   .contact-subtitle {
     text-align: center;
     padding: 0 50px;
+  }
+
+  .price-list {
+    width:50%;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .service-list {
+    width:50%;
+    text-align: right;
   }
 
 /* Gallery Page */
@@ -426,6 +447,9 @@ opacity: 1;
 
 /* MOBILE */
 @media (max-width: 576px) {
+  .gallery-title {
+    font-size: 3.5rem;
+  }
 
   .mobile-title {
     font-size: 2.5rem;
@@ -461,9 +485,15 @@ opacity: 1;
     margin-left: 0;
   }
 
+
 /* Gallery Page */
 
   .gallery {
     column-count: 2;
   }
+
+.caption {
+  display: none;
+}
+
 }

@@ -43,24 +43,24 @@ lightbox.addEventListener('click', e => {
 })
 
 // checks if mouse is hovering over the image, if so it adds a caption. It removes it is the mouse is off the image.
-lightbox.addEventListener('mouseover', e => {
-  if (e.target == e.currentTarget) {
-    var check_p = document.querySelector('#lightbox p')
-    if (check_p !== null) {
-      lightbox.removeChild(check_p)
-    }
-    return
-  }
-  else {
-    var check_p = document.querySelector('#lightbox p')
-    if (check_p !== null) {
-      return
-    }
-    else {
-      const caption = document.createElement('p')
-      caption.classList.add("lightbox-caption")
-      caption.id = "caption"
-      caption.innerHTML = "This is a placeholder"
-      lightbox.appendChild(caption)
-    }
-  }})
+// lightbox.addEventListener('mouseover', e => {
+//   if (e.target == e.currentTarget) {
+//     var check_p = document.querySelector('#lightbox p')
+//     if (check_p !== null) {
+//       lightbox.removeChild(check_p)
+//     }
+//     return
+//   }
+//   else {
+//     var check_p = document.querySelector('#lightbox p')
+//     if (check_p !== null) {
+//       return
+//     }
+//     else {
+//       const caption = document.createElement('p')
+//       caption.classList.add("lightbox-caption")
+//       caption.id = "caption"
+//       caption.innerHTML = "This is a placeholder"
+//       lightbox.appendChild(caption)
+//     }
+//   }})
