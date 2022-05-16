@@ -203,6 +203,10 @@ margin-left: 15px;
   font-weight: 400;
 }
 
+.hover-text {
+  margin-left: 5px;
+}
+
 .hover-text:hover {
   text-decoration: underline;
   color: white;
@@ -216,11 +220,11 @@ margin-left: 15px;
   display: inline-block;
 }
 
-.gallery-link {
+.underline-link {
   text-decoration: underline;
 }
 
-.gallery-link:hover {
+.underline-link:hover {
   color: inherit;
 }
 
@@ -229,10 +233,12 @@ margin-left: 15px;
 .footer-icon {
   color: #3f5459;
   font-size: 2rem;
-  margin: 25px;
+  margin: 25px 25px 10px 25px;
 }
 
-
+.website-design {
+  font-size: .8rem;
+}
 
 /* GALLERY PAGE */
 
