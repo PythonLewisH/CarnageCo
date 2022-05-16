@@ -47,6 +47,7 @@ a {
 
 .nav-item {
   padding: 0 18px;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -63,7 +64,7 @@ a {
 
 .mail-image {
   text-align: right;
-  width: 30%;
+  width: 70%;
 }
 
 .gallery-mail-image {
@@ -334,10 +335,6 @@ opacity: 1;
 @media (min-width:1400px) {
 
   /* Navbar  */
-  .mail-image {
-    text-align: right;
-    width: 50%;
-  }
 
 
 /* Gallery Page */
