@@ -500,3 +500,10 @@ opacity: 1;
 }
 
 }
+
+/* Fix for firefox (Price list) */
+@-moz-document url-prefix() {
+    .service-list {
+      width: 40%;
+    }
+}
