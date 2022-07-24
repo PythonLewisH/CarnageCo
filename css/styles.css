@@ -142,8 +142,18 @@ margin-left: 15px;
 }
 
 .about-card {
-  max-width: 540px;
+  max-width: 1200px;
   margin: 40px auto;
+}
+
+.about-pic {
+  display: flex;
+  align-items: center;
+}
+
+.about-copy {
+  align-items: center;
+  display: flex;
 }
 
 .about-img {
@@ -152,9 +162,11 @@ margin-left: 15px;
 
 .card-title {
   color: #3f5459;
+  margin-bottom: 2rem;
 }
 
 .card-text {
+  text-align: left;
   color: #3f5459;
 }
 
@@ -279,9 +291,9 @@ padding-bottom: 2px;
 } */
 
 
-.image-container:hover .caption {
+/* .image-container:hover .caption {
 opacity: 1;
-}
+} */
 
 
 .gallery-img {
@@ -322,8 +334,13 @@ opacity: 1;
   top: 2%;
   max-width: 50px;
   margin: 10px;
-
 }
+
+#lightbox .close-image:hover {
+cursor: pointer;
+}
+
+
 
 .close {
   display:none;
@@ -441,7 +458,7 @@ opacity: 1;
 
   .about-card {
     max-width: 540px;
-    margin: 40px 20%;
+    margin: 40px 10%;
   }
 
 }
@@ -464,7 +481,7 @@ opacity: 1;
 
   .about-card {
     max-width: 540px;
-    margin: 40px 20%;
+    margin: 40px 10%;
   }
 
   .contact-info {
