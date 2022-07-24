@@ -264,38 +264,6 @@ margin-left: 15px;
   position: relative;
 }
 
-.caption {
-  color: white;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 0;
-  background: rgba(0,0,0,0.6);
-  border: 3px solid white;
-  border-top: none;
-  opacity: 0;
-  transition: opacity 0.25s;
-  width: 100%;
-  line-height: 1.2;
-  padding-bottom: 2px;
-}
-
-/* .lightbox-caption {
-z-index: 1001;
-color: white;
-position: absolute;
-bottom: 10px;
-background: rgba(0,0,0,0.6);
-transition: opacity 0.25s;
-line-height: 1.2;
-padding-bottom: 2px;
-} */
-
-
-/* .image-container:hover .caption {
-opacity: 1;
-} */
-
-
 .gallery-img {
   width: 100% !important;
   height: auto !important;
@@ -512,9 +480,6 @@ cursor: pointer;
     column-count: 2;
   }
 
-.caption {
-  display: none;
-}
 
 }
 
